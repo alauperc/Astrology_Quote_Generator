@@ -1,0 +1,8 @@
+TO-DO:
+Version 1: will be run in the terminal and it will output a random quote based on your sign.
+It will need Date of birth and will have 5 quotes per zodiac symbol to choose from
+
+Version 2: Will be implemented on a website using HTML and CSS. One will be able to input their
+date of birth using a keyboard or a choose with a dropdown selection.
+
+Version 3: Use pictures of The Zodiac symbol to go along with the quote.
