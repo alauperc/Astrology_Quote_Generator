@@ -1,25 +1,27 @@
-// const zodiacSigns = { 
-//     Aries: ["Keep it going", "Don't eat the butter", "Listen to your feet", "Never say never, say pudding"],
-//     Taurus: ["Keep it going", "Don't eat the butter", "Listen to your feet", "Never say never, say pudding"],
-//     Gemini: ["Keep it going", "Don't eat the butter", "Listen to your feet", "Never say never, say pudding"],
-//     Cancer: ["Keep it going", "Don't eat the butter", "Listen to your feet", "Never say never, say pudding"],
-//     Leo: ["Keep it going", "Don't eat the butter", "Listen to your feet", "Never say never, say pudding"],
-//     Virgo: ["Keep it going", "Don't eat the butter", "Listen to your feet", "Never say never, say pudding"],
-//     Libra: ["Keep it going", "Don't eat the butter", "Listen to your feet", "Never say never, say pudding"],
-//     Scorpio: ["Keep it going", "Don't eat the butter", "Listen to your feet", "Never say never, say pudding"],
-//     Sagittarius: ["Keep it going", "Don't eat the butter", "Listen to your feet", "Never say never, say pudding"],
-//     Capricorn: ["Keep it going", "Don't eat the butter", "Listen to your feet", "Never say never, say pudding"],
-//     Aquarius: ["Keep it going", "Don't eat the butter", "Listen to your feet", "Never say never, say pudding"],
-//     Pisces: ["Keep it going", "Don't eat the butter", "Listen to your feet", "Never say never, say pudding"]
-//   }
+const zodiacSigns = { 
+    Aries: ["Keep it going", "Don't eat the butter", "Listen to your feet", "Never say never, say pudding"],
+    Taurus: ["Keep it going", "Don't eat the butter", "Listen to your feet", "Never say never, say pudding"],
+    Gemini: ["Keep it going", "Don't eat the butter", "Listen to your feet", "Never say never, say pudding"],
+    Cancer: ["Keep it going", "Don't eat the butter", "Listen to your feet", "Never say never, say pudding"],
+    Leo: ["Keep it going", "Don't eat the butter", "Listen to your feet", "Never say never, say pudding"],
+    Virgo: ["Keep it going", "Don't eat the butter", "Listen to your feet", "Never say never, say pudding"],
+    Libra: ["Keep it going", "Don't eat the butter", "Listen to your feet", "Never say never, say pudding"],
+    Scorpio: ["Keep it going", "Don't eat the butter", "Listen to your feet", "Never say never, say pudding"],
+    Sagittarius: ["Keep it going", "Don't eat the butter", "Listen to your feet", "Never say never, say pudding"],
+    Capricorn: ["Keep it going", "Don't eat the butter", "Listen to your feet", "Never say never, say pudding"],
+    Aquarius: ["Keep it going", "Don't eat the butter", "Listen to your feet", "Never say never, say pudding"],
+    Pisces: ["Keep it going", "Don't eat the butter", "Listen to your feet", "Never say never, say pudding"]
+  }
 
-// const zodiacMessageGenerator = (day, month) => {
-//   let zodiacSymbol = zodiacFinder(day, month)
+const zodiacMessageGenerator = (day, month) => {
+  let zodiacSymbol = zodiacFinder(day, month)
 
-//   let messageIndex = Math.floor((Math.random * zodiacSigns[zodiacSymbol].length) + 1)
+  const numOfQuotes = zodiacSigns[zodiacSymbol].length
+  let messageIndex = Math.floor((Math.random() * numOfQuotes))
 
-//   return `Your sign is ${zodiacSymbol}. Listen to these words ${zodiacSigns[zodiacSymbol][messageIndex]}`
-// }
+  // return zodiacSigns[zodiacSymbol][messageIndex]
+  return `Your sign is ${zodiacSymbol}. Listen to these words ${zodiacSigns[zodiacSymbol][messageIndex]}`
+}
 
 
 // Helper methods
@@ -119,5 +121,5 @@ console.log(`${month}`);
 const day = prompt('What day were you born in?');
 console.log(Number(day));
 
-console.log(`Your zodiac sign is ${zodiacFinder(day, month)}`)
+console.log(zodiacMessageGenerator(day, month))
 
