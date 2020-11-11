@@ -105,4 +105,19 @@ const zodiacFinder = (day, stringMonth) => {
 }
 
 
-console.log(zodiacFinder(24, "September"))
+
+let dayOfBirth = 0
+let dayOfMonth = ""
+
+// console.log(zodiacFinder(day, month))
+
+const prompt = require('prompt-sync')();
+ 
+const month = prompt('What month were you born in?');
+console.log(`${month}`);
+
+const day = prompt('What day were you born in?');
+console.log(Number(day));
+
+console.log(`Your zodiac sign is ${zodiacFinder(day, month)}`)
+
