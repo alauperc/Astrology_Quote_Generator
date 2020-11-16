@@ -21,7 +21,8 @@ The generator will ask for the person's date of birth and return them a quote ba
 * Node.js - Version 10.13.0
 
 ## Setup
-The random Generator will run through Describe how to install / setup your local environement / add link to demo version.
+Make sure you have Node and NPM installed
+Run npm install prompt-sync in the terminal
 
 ## Code Examples
 Show examples of usage:
@@ -29,13 +30,12 @@ Show examples of usage:
 
 ## Features
 List of features ready and TODOs for future development
-* Awesome feature 1
-* Awesome feature 2
-* Awesome feature 3
+* Takes a date of birth and returns your zodiac sign
+* A random message will be generated based off a users zodiac sign.
 
 To-do list:
-* Wow improvement to be done 1
-* Wow improvement to be done 2
+* Add script to web page using HTML and CSS
+* Add script to an app with Reactjs
 
 ## Status
 Project is: _in progress_
