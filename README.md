@@ -41,7 +41,7 @@ To-do list:
 Project is: _in progress_
 
 ## Inspiration
-Add here credits. Project inspired by..., based on...
+quotes were taken from: https://jacquelinelasahn.com/zodiac-quotes/
 
 ## Contact
 Created by [@alauperc](https://github.com/alauperc) - feel free to contact me!
